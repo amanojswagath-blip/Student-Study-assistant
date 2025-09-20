@@ -171,9 +171,15 @@ debug_*.py
 
 # Uploaded files (will be recreated in production)
 uploads/
-*.pdf
-*.docx
-*.txt
+# Ignore uploaded documents but keep requirements files
+uploads/*.pdf
+uploads/*.docx
+uploads/*.txt
+
+# Keep important deployment files
+!requirements*.txt
+!runtime.txt
+!*.md
 
 # Keep example files
 !.env.example
