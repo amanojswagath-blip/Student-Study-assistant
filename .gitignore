@@ -168,8 +168,23 @@ data/
 test_*.py
 validate.py
 debug_*.py
+
+# Uploaded files (will be recreated in production)
+uploads/
 *.pdf
 *.docx
 *.txt
+
 # Keep example files
 !.env.example
+
+# Railway deployment
+.railway/
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
